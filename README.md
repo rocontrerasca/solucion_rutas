@@ -19,4 +19,21 @@ Implementaria la metodología agíl SCRUM, porque nos brinda la posibilidad de e
 # Descripción de las buenas prácticas metodológicas que pueden agilizar el proceso de desarrollo, para la entrega de software de calidad en los diferentes ambientes
 Manejo de azure devops para el segumiento de la metodología Scrum, en el cual tenga creados los repositorios, tableros, tareas, sprint y asignaciones de cada desarrollador y tester, Segmentación de cada ambiente en devops mediante ramas, ejemplo rama master(Producción), rama dev(Desarrollo), rama qa(Pruebas), haciendo de esta manera que el ciclo correcto de desarrollo de una tarea sea generar una rama feature/#tarea sobre dev en la cual el desarrollador trabajará, una vez este completada, realizar un merge con dev, donde se realizará una revisión de calidad de codigo para así hacer un merge a qa para el proceso de pruebas, si las pruebas son exitosas, se realizará dicho merge a master con el fin de liberar esa funcionalidad, si las pruebas no son exitosas, el tester devolvera la tarea y se iniciara nuevamente el ciclo de desarrollo desde el feature corrigiendo las observaciones o no cumplimientos del entregable
 
+# Infraestructura y plataformas necesaria para soportar el desarrollo
+- Nube nativa con Azure
+- WAF que me sirva de protección
+- Api management services, para exponer las apis que consumirá el app web y el app movil, usa como backend un micorservicio de entrypoint
+- Cluster AKS que aloja los contenedores de los microservicios
+- App service para desplegar el aplicativo web
+- Azure devops para el manejo de los repositorios y la metodologia Scrum
+- Azure Base de datos SQL Server o postgresql
+- Apis externas para el envio de sms
+- Licencia y cuentas para el despliegue del app movil en la tienda playstore y en la appstore
 
+# Posibles riesgos que pueden materializarse en la ejecución del proyecto y cómo mitigarlos
+- Nuevos requerimientos no contemplados: Esto puede mitigarse verificando el impacto del nuevo requerimiento y analizando en que iteración de la metodologia puede ejecutarse
+- Que se reduzca el equipo de desarrollo, por lo que se deberá mantener motivado al equipo con la finalización del proyecto y si es necesario incentivos o reconocimientos al culminar el proyecto de manera satisfactoria o al termino de cierto porcentaje de avance
+- Bloqueantes tecnologicos, como un lenaguaje incompatible, se deberá analizar que otro framework nos puede brindar la misma facilidad y resultados esperados
+
+# Otros elementos que considere necesarios para este proyecto
+Se consideran necesarios un equipode desarrollo integral compuesto por 2 fullstack con conocimiento en desarrollo movil, un desarrollador backend con conocimiento en base de datos y un experto en la nube para la configuración de cada componente requerido para cada ambiente
