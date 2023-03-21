@@ -10,6 +10,7 @@ Como parte de los proyectos de sostenibilidad de la compañía, se está buscand
 # Tecnologías, lenguajes de programación y frameworks a utilizar y justificación de la selección de cada uno
 - Para frontend web, implementaria la plataforma con ReactJS por la facilidad y rapidez que brinda esta libreria de JS para el desarrollo de aplicaciones web rapidas
 - Para la aplicación movil, la desarrollaría con ionic Capacitor, la facilidade de desarrollo con typescript ademas de ser un framework que me genera la aplicación tanto para android como iOS
+- Autenticación de usuario con B2C, ya que es un componente que nos facilita Azure para la gestion de usuarios de nuestras aplicaciones, ya sea usuarios externos o internos, completamente parametrizable
 - Para el backend de la solución, me iria con .NET Core, por ser un lenguaje robusto que soportaria la logica de la solución, con la creación de microservicios alojados en contenedores docker en Azure Kubernetes services
 - Para base de datos seleccionaria SQL Server o Postgresql por ser gestores de bases de datos relacionales y la simplicidad de implementación y uso
 
@@ -22,6 +23,7 @@ Manejo de azure devops para el segumiento de la metodología Scrum, en el cual t
 # Infraestructura y plataformas necesaria para soportar el desarrollo
 - Nube nativa con Azure
 - WAF que me sirva de protección
+- Azure B2C
 - Api management services, para exponer las apis que consumirá el app web y el app movil, usa como backend un micorservicio de entrypoint
 - Cluster AKS que aloja los contenedores de los microservicios
 - App service para desplegar el aplicativo web
